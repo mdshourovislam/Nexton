@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  max-width: 1296px;
+}
+
+@theme{
+  /* color */
+  --color-parmirycolor: #F8F8F8;
+
+  /* font */
+  --font-Poppin:"Poppins", sans-serif;
+}
+
+/* index.css or App.css */
+.slick-dots li.slick-active div {
+  @apply bg-red-500;  /* Active dot becomes red */
+}
