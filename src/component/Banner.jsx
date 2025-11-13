@@ -16,16 +16,7 @@ const Banner = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     
-      customPaging: (i) => (
-      <div className="w-4 h-4 rounded-full active:bg-amber-200 bg-gray-300 "></div>
-    ),
 
-    // Custom dot container layout
-    appendDots: (dots) => (
-      <div>
-        <ul className="flex justify-center gap-3 mt-4">{dots}</ul>
-      </div>
-    ),
   };
     
 
@@ -35,7 +26,10 @@ const Banner = () => {
   return (
 
     <>
-   <Slider {...settings}>
+
+    <section class='banner'>
+        <div className="container-slide">
+            <Slider {...settings}>
       <div className=' outline-none'>
         <img className='w-full' src={banner} alt="" />
       </div>
@@ -50,9 +44,18 @@ const Banner = () => {
        <div className=' outline-none'>
         <img className='w-full' src={banner2} alt="" />
       </div>
+       <div className=' outline-none'>
+        <img className='w-full' src={banner2} alt="" />
+      </div>
+       <div className=' outline-none'>
+        <img className='w-full' src={banner2} alt="" />
+      </div>
     
 
     </Slider>
+        </div>
+    </section>
+   
     </>
   )
 }

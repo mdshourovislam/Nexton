@@ -13,7 +13,77 @@
   --font-Poppin:"Poppins", sans-serif;
 }
 
-/* index.css or App.css */
-.slick-dots li.slick-active div {
-  @apply bg-red-500;  /* Active dot becomes red */
+
+.banner {
+  position: relative;
+}
+
+.banner .slick-dots {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Default dot */
+.banner .slick-dots li button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+
+/* Active dot */
+.banner .slick-dots li.slick-active button {
+  background: black !important;
+  transform: scale(1.2);
+}
+
+.exploring .slick-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.exploring .slick-dots li button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+
+.exploring .slick-dots li button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+.exploring .slick-dots li.slick-active button {
+  background: black !important;
+  transform: scale(1.2);
+}
+.slider-container{
+  position: relative;
+}
+
+.exploring .slick-slide > div {
+  padding: 0 15px;
 }
