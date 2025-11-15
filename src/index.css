@@ -8,6 +8,8 @@
 @theme{
   /* color */
   --color-parmirycolor: #F8F8F8;
+  --color-fontc:#4B5563;
+  --color-fontcol:#111827;
 
   /* font */
   --font-Poppin:"Poppins", sans-serif;
