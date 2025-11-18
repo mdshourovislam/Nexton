@@ -1,14 +1,24 @@
 import React from 'react'
 import { GiRoundStar } from "react-icons/gi";
 import { IoBagHandleOutline } from "react-icons/io5";
+import { TbListDetails } from "react-icons/tb";
 
 
-const ReUseCon = ({title,price,thumbnail,rating,category,discount}) => {
+const ReUseCon = ({title,price,thumbnail,rating,category,discount,handlars}) => {
     return (
         <div className='w-[309px]'>
                 <div className=' w-full h-[360px] overflow-hidden group bg-gray-100 relative '>
                     <img src={thumbnail} alt="" />
-                    <button className='h-[36px] w-[36px] bg-white right-[-35px] group-hover:right-2  duration-[.4s] rounded-full active:scale-[1.1] p-2 flex absolute justify-center items-center right-2 top-2'> <IoBagHandleOutline /></button>
+                    <div className='right-[-35px] group-hover:right-2  duration-[.4s] block  absolute justify-center items-center right-2 top-2'>
+                        <div>
+
+                        <button className='h-[36px] w-[36px] bg-white rounded-full active:scale-[1.1] p-2 '> <IoBagHandleOutline /></button>
+                        </div>
+                        <div>
+
+                        <button onClick={handlars} className='h-[36px] w-[36px] bg-white rounded-full active:scale-[1.1] p-2 mt-4'> <TbListDetails /></button>
+                        </div>
+                    </div>
 
                 </div>
                 <div className='flex justify-between px-4 mt-5'>

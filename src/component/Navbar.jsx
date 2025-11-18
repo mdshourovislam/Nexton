@@ -9,7 +9,7 @@ import { Link } from 'react-router';
 
 const Navbar = () => {
 
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     return (
         <>
 
@@ -17,7 +17,11 @@ const Navbar = () => {
 
                 <div className="container">
                     <div className="navrow flex justify-between ">
-                        <div className='imagediv'><img src={logo} alt="" /></div>
+                         <div className='imagediv flex  items-center'>
+                            <Link to={'/'} className='navlogo'>
+                                <img src={logo} alt="" />
+                            </Link>
+                        </div>
                         <div className="navSer w-[400px] h-[52px] bg-parmirycolor gap-2.5 rounded-[100px] p-6 flex text-[20px] items-center">
                             <CiSearch className='w-5' />
                             <input className='w-full outline-none placeholder:font-Poppin placeholder:text-[#4B5563]' type="text" placeholder='Search in products...'
@@ -47,7 +51,7 @@ const Navbar = () => {
                                 <img src={faveicon} alt="" />
                             </Link>
                         </div>
-                        <div className="navSer w-[200px] h-[36px] bg-parmirycolor gap-2.5 rounded-[100px] p-6 flex text-[12px] items-center">
+                        <div className="navSer w-[200px] h-9 bg-parmirycolor gap-2.5 rounded-[100px] p-6 flex text-[12px] items-center">
                             <CiSearch className='w-5' />
                             <input className='w-full outline-none placeholder:font-Poppin placeholder:text-[#4B5563]' type="text" placeholder='Search in products...'
                             />

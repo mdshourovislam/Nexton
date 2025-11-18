@@ -3,6 +3,8 @@ import './App.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router'
 import Layoutone from './layout/Layoutone'
 import Home from './pages/Home'
+import DetailsP from './component/DetailsP'
+
 
 const App = () => {
 
@@ -11,6 +13,7 @@ const App = () => {
       <Route path='/' element={<Layoutone/>}>
 
       <Route index element={<Home/>}/>
+      <Route path='/details' element={<DetailsP/>}/>
 
       </Route>
     </Route>
